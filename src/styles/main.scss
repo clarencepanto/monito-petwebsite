@@ -1,0 +1,20 @@
+@use "./abstracts/variables" as *;
+@use "./abstracts/breakpoints" as *;
+@use "./abstracts/colors" as *;
+@use "./base/typography";
+@use "./layout/container";
+@use "./layout/grid";
+@use "./layout/flex";
+@use "./layout/section";
+@use "./components/buttons";
+@use "./components/input";
+@use "./components/card";
+
+body {
+  font-family: $font-primary;
+  font-weight: $fw-regular;
+}
+
+h1 {
+  font-weight: $fw-bold;
+}

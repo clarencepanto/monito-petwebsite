@@ -1,0 +1,24 @@
+@use "../abstracts/breakpoints" as *;
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem; // Mobile padding
+
+  @include sm {
+    padding: 0 1.5rem;
+  }
+
+  @include md {
+    padding: 0 2rem;
+    max-width: 768px;
+  }
+
+  @include lg {
+    max-width: 1024px;
+  }
+
+  @include xl {
+    max-width: 1280px;
+  }
+}

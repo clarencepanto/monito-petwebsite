@@ -1,0 +1,33 @@
+@use "../abstracts/breakpoints" as *;
+
+.flex {
+  display: flex;
+  gap: 1rem;
+
+  // Stack on mobile by default
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

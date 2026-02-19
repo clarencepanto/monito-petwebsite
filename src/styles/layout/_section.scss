@@ -1,0 +1,33 @@
+@use "../abstracts/breakpoints" as *;
+
+.section {
+  padding: 2rem 0; // Mobile
+
+  @include md {
+    padding: 4rem 0; // Tablet
+  }
+
+  @include lg {
+    padding: 6rem 0; // Desktop
+  }
+}
+
+.section-sm {
+  padding: 1.5rem 0;
+
+  @include md {
+    padding: 3rem 0;
+  }
+}
+
+.section-lg {
+  padding: 3rem 0;
+
+  @include md {
+    padding: 6rem 0;
+  }
+
+  @include lg {
+    padding: 8rem 0;
+  }
+}

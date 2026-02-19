@@ -1,0 +1,37 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/breakpoints" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/colors" as *;
+
+.btn {
+  padding: 18px 35px;
+  border: none;
+  background-color: $color-interactive-1;
+  border-radius: 60px;
+  font-size: $fsm-2xl;
+  color: $neutral-color-00;
+  text-align: center;
+  cursor: pointer;
+  font-weight: $fw-regular;
+
+  &--transparent {
+    background-color: rgba($color: $neutral-color-00, $alpha: 0.001);
+    color: $color-interactive-1;
+    border: 2px solid $color-interactive-1;
+  }
+
+  &--transparentlarge {
+    background-color: rgba($color: $neutral-color-00, $alpha: 0.001);
+    color: $color-interactive-1;
+    border: 2px solid $color-interactive-1;
+    padding: 18px 160px;
+  }
+
+  &--primarylarge {
+    padding: 18px 100px;
+    background-color: $color-interactive-1;
+    color: $neutral-color-00;
+    border-radius: 10px;
+    transform: translateY(20px);
+  }
+}

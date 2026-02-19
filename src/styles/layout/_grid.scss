@@ -1,0 +1,47 @@
+@use "../abstracts/breakpoints" as *;
+
+.grid {
+  display: grid;
+  gap: 2rem;
+
+  // 1 column mobile
+  grid-template-columns: repeat(2, 1fr);
+
+  // 2 columns tablet
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  // 3 columns desktop
+  @include md {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  // 4 columns large desktop
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Utility grid classes
+.grid-2 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-3 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+
+  @include md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
