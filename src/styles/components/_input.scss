@@ -24,15 +24,3 @@
     }
   }
 }
-
-.input--desktop {
-  display: none;
-
-  @include lg {
-    display: block;
-    width: 160px;
-    padding: 14px 40px;
-    border-radius: 10px;
-    outline: none;
-  }
-}

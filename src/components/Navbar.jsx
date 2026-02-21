@@ -1,9 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+
 import "../styles/components/_navbar.scss";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  // const [value, setValue] = useState(""); // dropdown
+
+  // dropdown
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selected, setSelected] = useState("VND");
+  const ref = useRef(null);
+
+  const options = ["VND", "VPD"];
+
+  // when user clicks outside, close the dropdown
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -98,17 +119,49 @@ function Navbar() {
             />
           </svg>
         </button>
+
+        {/* search input for desktop */}
         <input
           type="text"
           className="input--desktop"
-          placeholder="Search Something Here"
+          placeholder="Search Something here!"
         />
-        <button className="btn" onClick={closeMenu}>
+        <button className="btn btn--navbar" onClick={closeMenu}>
           Join the community
         </button>
+
+        {/* dropdown */}
+        <div className="flex-center navbar__dropdowncontainer">
+          <img
+            src="/images/logo/Flag.png"
+            alt="flag"
+            className="navbar__flag"
+          />
+          <div ref={ref} className="dropdown">
+            <button onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+              <span>{selected}</span> {isDropdownOpen ? "▴" : "▾"}
+            </button>
+
+            {isDropdownOpen && (
+              <ul className="dropdown__menu">
+                {options.map((opt) => (
+                  <li
+                    key={opt}
+                    onClick={() => {
+                      setSelected(opt);
+                      setIsDropdownOpen(false);
+                    }}
+                  >
+                    {opt}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
       </div>
 
-      {/* search input */}
+      {/* search input mobile and tablet */}
       <div
         className={`input__group flex-center ${isSearchOpen ? "input__group--active" : ""}`}
       >
