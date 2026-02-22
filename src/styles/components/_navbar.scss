@@ -3,10 +3,12 @@
 @use "../abstracts/variables" as *;
 
 .navbar {
-  background-color: transparent;
   padding: 1rem;
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  font-family: $font-primary;
+  background-color: $color-brand-2;
+  width: 100%;
 
   @include lg {
     // Desktop: separate, fixed at top
@@ -63,6 +65,7 @@
     font-size: 1.5rem;
     width: 92px;
     height: 22px;
+    z-index: 2000;
 
     &--sub {
       width: 42px;
@@ -115,7 +118,6 @@
 
     @include lg {
       font-size: 1rem;
-      color: var(--text-primary);
     }
   }
 
@@ -161,7 +163,6 @@
 
     span {
       padding-right: 0.5rem;
-      font-family: $font-primary;
     }
   }
 
@@ -179,4 +180,19 @@
 
 .btn--navbar {
   font-size: $fsm-2xl;
+}
+
+.squaredesign {
+  border-radius: 62px;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  overflow: hidden;
+
+  &__top {
+    background-color: $color-brand-1;
+    top: -21.5rem;
+    left: -3rem;
+    transform: rotate(20deg);
+  }
 }

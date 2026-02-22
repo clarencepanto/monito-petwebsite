@@ -1,0 +1,76 @@
+@use "../abstracts/breakpoints" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+.hero {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: $color-brand-2;
+
+  &__title {
+    color: $color-interactive-1;
+    font-size: 46px;
+  }
+
+  &__subtitle {
+    color: $color-interactive-1;
+    font-size: 28px;
+    padding-bottom: 1rem;
+  }
+
+  &__details {
+    font-size: $fsm-md;
+    line-height: 1.3rem;
+    padding-bottom: 1rem;
+  }
+
+  &__img {
+    padding-top: 3rem;
+    width: 100%;
+  }
+}
+
+.hero__btn {
+  font-weight: $fw-regular;
+
+  &--img {
+    width: 18px;
+    height: 18px;
+    padding-left: 0.3rem;
+  }
+
+  &--marginfix {
+    margin-right: 1.1rem;
+  }
+}
+
+.squaredesign {
+  border-radius: 62px;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  overflow: hidden;
+
+  &__bottom {
+    width: 500px;
+    height: 500px;
+    bottom: -12rem;
+    right: -12rem;
+    transform: rotate(20deg);
+    background-color: $color-brand-1;
+    z-index: 2;
+
+    &--darkblue {
+      background-color: $color-interactive-1;
+      bottom: -13rem;
+      left: 5rem;
+      transform: rotate(1deg);
+      z-index: 1;
+    }
+  }
+}
+
+.image {
+  z-index: 3;
+}

@@ -5,12 +5,11 @@ import "../styles/components/_navbar.scss";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  // const [value, setValue] = useState(""); // dropdown
 
   // dropdown
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selected, setSelected] = useState("VND");
-  const ref = useRef(null);
+  const ref = useRef(null); // reference the dom
 
   const options = ["VND", "VPD"];
 
@@ -40,6 +39,8 @@ function Navbar() {
 
   return (
     <nav className="navbar">
+      {/* hero square designs */}
+      <div className="squaredesign squaredesign__top"></div>
       <div className="navbar__container">
         <button className="navbar__toggle" onClick={toggleMenu}>
           <svg

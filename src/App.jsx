@@ -1,5 +1,6 @@
 import "./styles/main.scss";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
     // </div>
     <div>
       <Navbar />
+      <Hero />
     </div>
   );
 }
