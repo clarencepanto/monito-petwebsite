@@ -2,8 +2,7 @@
 
 .grid {
   display: grid;
-  gap: 2rem;
-
+  gap: 1rem;
   // 1 column mobile
   grid-template-columns: repeat(2, 1fr);
 

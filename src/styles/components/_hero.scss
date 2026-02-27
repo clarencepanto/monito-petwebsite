@@ -3,7 +3,8 @@
 @use "../abstracts/variables" as *;
 
 .hero {
-  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   position: relative;
   overflow: hidden;
   background-color: $color-brand-2;
@@ -35,9 +36,9 @@
   font-weight: $fw-regular;
 
   &--img {
-    width: 18px;
-    height: 18px;
-    padding-left: 0.3rem;
+    width: 20px;
+    height: 20px;
+    transform: translateX(10px);
   }
 
   &--marginfix {
@@ -64,9 +65,40 @@
     &--darkblue {
       background-color: $color-interactive-1;
       bottom: -13rem;
-      left: 5rem;
+      left: 4rem;
       transform: rotate(1deg);
       z-index: 1;
+    }
+  }
+
+  &__tinysquares {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    position: absolute;
+
+    &--nearfun {
+      background-color: $color-brand-1;
+      top: 59px;
+      right: 100px;
+    }
+
+    &--neard {
+      background-color: $color-brand-1;
+      top: 42px;
+      right: 60px;
+      width: 16px;
+      height: 16px;
+      transform: rotate(15deg);
+    }
+    &--darkblue {
+      background-color: $color-interactive-1;
+      top: 65px;
+      right: 103px;
+      z-index: 1;
+      width: 16px;
+      height: 16px;
+      transform: rotate(-15deg);
     }
   }
 }

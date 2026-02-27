@@ -31,6 +31,9 @@ function Hero() {
         {/* hero square designs */}
         <div className="squaredesign squaredesign__bottom"></div>
         <div className="squaredesign squaredesign__bottom squaredesign__bottom--darkblue"></div>
+        <div className="squaredesign__tinysquares squaredesign__tinysquares--nearfun"></div>
+        <div className="squaredesign__tinysquares squaredesign__tinysquares--neard"></div>
+        <div className="squaredesign__tinysquares squaredesign__tinysquares--darkblue"></div>
       </section>
     </div>
   );

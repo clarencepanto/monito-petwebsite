@@ -1,0 +1,26 @@
+@use "../../abstracts/breakpoints" as *;
+@use "../../abstracts/colors" as *;
+@use "../../abstracts/variables" as *;
+
+.registerform {
+  background-color: $color-interactive-1;
+  border-radius: 20px;
+  height: 250px;
+
+  &__title {
+    color: $neutral-color-00;
+    font-size: $fsm-3xl;
+    padding: 1rem;
+  }
+}
+
+.registerforminput__container {
+  background-color: $neutral-color-00;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.registerform-positioning {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

@@ -1,6 +1,7 @@
 @use "./abstracts/variables" as *;
 @use "./abstracts/breakpoints" as *;
 @use "./abstracts/colors" as *;
+@use "./base/reset";
 @use "./base/typography";
 @use "./layout/container";
 @use "./layout/grid";
@@ -13,6 +14,7 @@
 body {
   font-family: $font-primary;
   font-weight: $fw-regular;
+  background-color: $neutral-color-10;
 }
 
 h1 {

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "breed": "MO231 - Pomeranian White",
+    "age": "02",
+    "gender": "Male",
+    "image": "/images/dogs/dog-1.png",
+    "price": "6.900.000"
+  },
+  {
+    "id": 2,
+    "breed": "MO502 - Poodle Tiny Yellow",
+    "age": "02",
+    "gender": "Female",
+    "image": "/images/dogs/dog-2.png",
+    "price": "3.900.000"
+  },
+  {
+    "id": 3,
+    "breed": "MO102 - Poodle Tiny Sepia",
+    "age": "02",
+    "gender": "Male",
+    "image": "/images/dogs/dog-3.png",
+    "price": "4.000.000"
+  },
+  {
+    "id": 4,
+    "breed": "MO512 - Alaskan Malamute Grey",
+    "age": "03",
+    "gender": "Male",
+    "image": "/images/dogs/dog-4.png",
+    "price": "8.900.000"
+  },
+  {
+    "id": 5,
+    "breed": "MO231 - Pembroke Corgi Cream",
+    "age": "03",
+    "gender": "Male",
+    "image": "/images/dogs/dog-5.png",
+    "price": "7.900.000"
+  },
+  {
+    "id": 6,
+    "breed": "MO502 - Pembroke Corgi Tricolor",
+    "age": "02",
+    "gender": "Female",
+    "image": "/images/dogs/dog-6.png",
+    "price": "6.900.000"
+  },
+  {
+    "id": 7,
+    "breed": "MO102 - Pomeranian Grey",
+    "age": "02",
+    "gender": "Female",
+    "image": "/images/dogs/dog-7.png",
+    "price": "6.500.000"
+  },
+  {
+    "id": 8,
+    "breed": "MO512 - Poodle Tiny Dairy Cow",
+    "age": "03",
+    "gender": "Male",
+    "image": "/images/dogs/dog-8.png",
+    "price": "5.000.000"
+  }
+]

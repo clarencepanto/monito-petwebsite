@@ -6,6 +6,8 @@
   width: 330px;
   border-radius: 10px;
   outline: none;
+  border: none;
+  border: 1px solid $neutral-color-40;
 
   @include md {
     width: 800px;

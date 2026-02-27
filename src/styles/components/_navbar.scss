@@ -65,11 +65,13 @@
     font-size: 1.5rem;
     width: 92px;
     height: 22px;
-    z-index: 2000;
+    z-index: 4;
+    padding-bottom: 0.25rem;
 
     &--sub {
       width: 42px;
       height: 6px;
+      z-index: 4;
     }
 
     @include lg {
