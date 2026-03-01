@@ -1,0 +1,14 @@
+@use "../../abstracts/breakpoints" as *;
+@use "../../abstracts/colors" as *;
+@use "../../abstracts/variables" as *;
+
+.sortfilter {
+  padding-top: 1rem;
+  select {
+    border: 1px solid $neutral-color-20;
+    background-color: $neutral-color-10;
+    border-radius: 50px;
+    padding: 0.5rem 1.3rem;
+    outline: none;
+  }
+}

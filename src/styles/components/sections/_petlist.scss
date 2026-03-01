@@ -19,6 +19,50 @@
   &__cards {
     padding-bottom: 1rem;
   }
+
+  .pageindex {
+    display: none;
+  }
+
+  &--category {
+    .petlist__subtitle {
+      font-size: $fsm-md;
+      transform: translate(6.5rem, 1.6rem);
+      padding-top: 0;
+    }
+
+    .btn-petlist {
+      display: none;
+    }
+  }
+
+  &--category-2 {
+    .petlist__subtitle {
+      padding: 0;
+    }
+    .petlist__title {
+      padding: 0;
+    }
+
+    .btn-petlist {
+      display: none;
+    }
+
+    .pageindex {
+      display: flex;
+      width: 80%;
+      margin: auto;
+
+      padding: 1.5rem 0;
+
+      &--selected {
+        background-color: $color-interactive-1;
+        padding: 0.3rem 0.8rem;
+        color: $neutral-color-00;
+        border-radius: 8px;
+      }
+    }
+  }
 }
 
 .chevron {

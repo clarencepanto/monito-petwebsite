@@ -1,9 +1,9 @@
 import "../styles/components/_hero.scss";
 
-function Hero() {
+function Hero({ variant = "default", image }) {
   return (
     <div>
-      <section className="container hero">
+      <section className={`hero hero--${variant}`}>
         <h1 className="hero__title">One More Friend</h1>
         <article>
           <h2 className="hero__subtitle">Thousands More Fun!</h2>
@@ -13,7 +13,7 @@ function Hero() {
             that can meet your needs!
           </p>
         </article>
-        <div className="flex-row">
+        <div className="flex-row btn-cont--category">
           <button className="btn btn--transparent flex-center hero__btn hero__btn--marginfix">
             View Intro
             <img
@@ -25,7 +25,7 @@ function Hero() {
           <button className="btn hero__btn ">Explore Now</button>
         </div>
         <div className="flex hero__img">
-          <img src="/images/hero.png" alt="hero.png" className="image" />
+          <img src={image} alt="hero.png" className="image" />
         </div>
 
         {/* hero square designs */}

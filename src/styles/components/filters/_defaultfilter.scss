@@ -1,0 +1,17 @@
+@use "../../abstracts/breakpoints" as *;
+@use "../../abstracts/colors" as *;
+@use "../../abstracts/variables" as *;
+
+.defaultfilter {
+  transform: translateY(-25px);
+  padding-right: 2rem;
+  img {
+    transform: translateY(-3px);
+    width: 20px;
+    height: 20px;
+  }
+
+  h3 {
+    font-size: $fsm-md;
+  }
+}

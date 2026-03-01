@@ -36,3 +36,16 @@
   display: flex;
   flex-direction: row;
 }
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.overflowhiddenX {
+  overflow-x: hidden;
+}

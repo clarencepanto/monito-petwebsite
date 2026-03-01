@@ -2,14 +2,14 @@ import React from "react";
 import "../../styles/components/sections/_petlist.scss";
 import PetData from "../../data/pets.json";
 
-function PetList() {
+function PetList({ variant = "default", title, subtitle }) {
   const data = PetData;
 
   return (
-    <section className="petlist container">
+    <section className={`container petlist petlist--${variant} `}>
       <div>
-        <h3 className="petlist__subtitle">What's new?</h3>
-        <h1 className="petlist__title">Take A Look At Some Of Our Pets</h1>
+        <h3 className="petlist__subtitle">{subtitle}</h3>
+        <h1 className="petlist__title">{title}</h1>
         <section className="grid petlist__cards">
           {data.map((pets) => {
             return (
@@ -34,9 +34,18 @@ function PetList() {
             );
           })}
         </section>
-        <button className=" btn--transparentlarge">
+        <button className="btn-petlist btn--transparentlarge">
           View more <span className="chevron">&rsaquo;</span>
         </button>
+        <div className={`flex-between pageindex`}>
+          <p>&larr;</p>
+          <p className="pageindex--selected">1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>...</p>
+          <p>28</p>
+          <p>&rarr;</p>
+        </div>
       </div>
     </section>
   );

@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
+import NavigationRef from "../components/sections/NavigationRef";
 
 import "../styles/components/_navbar.scss";
 
-function Navbar() {
+function Navbar({ variant = "default" }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
@@ -38,7 +39,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar navbar--${variant}`}>
       {/* hero square designs */}
       <div className="squaredesign squaredesign__top"></div>
       <div className="navbar__container">
@@ -172,6 +173,7 @@ function Navbar() {
           placeholder="Search something here!"
         />
       </div>
+      <NavigationRef variant="show" />
     </nav>
   );
 }
