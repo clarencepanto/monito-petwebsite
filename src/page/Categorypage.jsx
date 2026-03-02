@@ -9,7 +9,10 @@ function Categorypage() {
   return (
     <section className="overflowhiddenX">
       <Navbar variant="transparent" />
-      <Hero variant="categoryvariant" image={"/images/categoryhero.png"} />
+      <div className="container">
+        <Hero variant="categoryvariant" image={"/images/categoryhero.png"} />
+      </div>
+
       <SortFilter />
       <DefaultFilter />
       <Petlist variant="category" title="Small Dog" subtitle="52 puppies" />
