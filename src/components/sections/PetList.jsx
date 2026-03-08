@@ -6,11 +6,11 @@ function PetList({ variant = "default", title, subtitle }) {
   const data = PetData;
 
   return (
-    <section className={`container petlist petlist--${variant} `}>
+    <section className={` petlist petlist--${variant} `}>
       <div>
         <h3 className="petlist__subtitle">{subtitle}</h3>
         <h1 className="petlist__title">{title}</h1>
-        <section className="grid petlist__cards">
+        <section className="grid petlist__cards gap20">
           {data.map((pets) => {
             return (
               <div className="card">

@@ -63,6 +63,12 @@
       }
     }
   }
+
+  &--nobtn {
+    .btn-petlist {
+      display: none;
+    }
+  }
 }
 
 .chevron {

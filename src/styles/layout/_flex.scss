@@ -18,6 +18,11 @@
   align-items: center;
 }
 
+.flex-align-elements {
+  display: flex;
+  align-items: center;
+}
+
 .flex-between {
   display: flex;
   justify-content: space-between;
@@ -49,13 +54,23 @@
   justify-content: flex-end;
 }
 
+.gap20 {
+  gap: 20px;
+}
+
 .gap10 {
   gap: 10px;
+}
+.gap5 {
+  gap: 5px;
 }
 
 .overflowhiddenX {
   overflow-x: hidden;
 }
 .p1-top {
-  padding: 1rem;
+  padding-top: 1rem;
+}
+.p1-bottom {
+  padding-bottom: 1rem;
 }
