@@ -25,6 +25,13 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
 .flex-column {
   display: flex;
@@ -48,4 +55,7 @@
 
 .overflowhiddenX {
   overflow-x: hidden;
+}
+.p1-top {
+  padding: 1rem;
 }

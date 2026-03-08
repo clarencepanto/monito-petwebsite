@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "SKU": "#1000078",
+    "gender": "Female",
+    "age": 2,
+    "size": "small",
+    "color": "Appricot & Tan",
+    "vaccinated": "Yes",
+    "dewormed": "Yes",
+    "cert": "Yes (MKA)",
+    "microchip": "Yes",
+    "location": "Vietnam",
+    "publishdate": "12-Oct-2022",
+    "additional information": "Pure breed Shih Tzu. Good body structure. With MKA cert and micropchip. Father from champion lineage"
+  }
+]

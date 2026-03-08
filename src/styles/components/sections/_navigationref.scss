@@ -19,4 +19,22 @@
       position: relative;
     }
   }
+
+  &--petdetails {
+    display: flex;
+    gap: 13px;
+    font-size: $fsm-md;
+    padding-left: 0;
+    padding-top: 1rem;
+    color: $neutral-color-60;
+
+    a {
+      color: $neutral-color-60;
+    }
+
+    .navrefchevright {
+      font-size: 1.1rem;
+      transform: translateY(-4.5px);
+    }
+  }
 }

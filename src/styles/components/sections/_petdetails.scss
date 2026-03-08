@@ -1,0 +1,54 @@
+@use "../../abstracts/breakpoints" as *;
+@use "../../abstracts/colors" as *;
+@use "../../abstracts/variables" as *;
+
+.petdetails-cont {
+  margin-top: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 -4px 6px 2px rgba(0, 0, 0, 0.1);
+}
+
+.petdetails {
+  &-darklineimg {
+    width: 2rem;
+    height: 0.3rem;
+    margin-top: 0.5rem;
+  }
+
+  &__buttonchatbox {
+    width: 1.5rem;
+    height: 1.5rem;
+    // position: absolute;
+  }
+
+  &__petname {
+    font-size: $fsm-3xl;
+    padding-bottom: 0.5rem;
+  }
+  &__petprice {
+    font-size: $fsm-l;
+    font-weight: $fw-bold;
+    padding-bottom: 0.8rem;
+  }
+
+  &__infotitle {
+    font-size: $fsm-2xl;
+  }
+
+  &__sharebtnimg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &__sharebtn {
+    font-size: $fsm-l;
+  }
+}
+
+.btnpetdetails-special {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  gap: 10px;
+}

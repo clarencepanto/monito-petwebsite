@@ -3,7 +3,8 @@
 @use "../abstracts/variables" as *;
 
 .btn {
-  padding: 12px 35px;
+  width: 14rem;
+  padding: 0.5rem 0;
   border: none;
   background-color: $color-interactive-1;
   border-radius: 60px;
@@ -24,10 +25,11 @@
     background-color: rgba($color: $neutral-color-00, $alpha: 0.001);
     color: $color-interactive-1;
     border: 2px solid $color-interactive-1;
-    padding: 10px 0;
     border-radius: 60px;
     width: 100%;
     font-size: $fsm-2xl;
+    font-family: $font-primary;
+    font-weight: $fw-bold;
   }
 
   &--primarylarge {
