@@ -2,9 +2,7 @@ import "../../styles/components/sections/_navigationref.scss";
 
 function NavigationRef({ variant = "default", a, b, c, d }) {
   return (
-    <div
-      className={`navigationref container flex-row navigationref--${variant} `}
-    >
+    <div className={` container flex-row navigationref--${variant} `}>
       <a href="">{a}</a>
       <p className="navrefchevright">&rsaquo;</p>
       <a href="">{b}</a>

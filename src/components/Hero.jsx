@@ -23,7 +23,7 @@ function Hero({ variant = "default", image }) {
               className="hero__btn--img "
             />
           </button>
-          <button className="btn hero__btn ">Explore Now</button>
+          <button className="btn hero__btn btncategory">Explore Now</button>
         </div>
         <div className="flex hero__img">
           <img src={image} alt="hero.png" className="image" />

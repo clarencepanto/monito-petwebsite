@@ -173,7 +173,6 @@ function Navbar({ variant = "default" }) {
           placeholder="Search something here!"
         />
       </div>
-      <NavigationRef variant="show" />
     </nav>
   );
 }
