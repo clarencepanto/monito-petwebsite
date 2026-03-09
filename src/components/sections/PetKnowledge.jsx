@@ -7,7 +7,7 @@ function PetKnowledge() {
   return (
     <section className="petknowledge container">
       <div>
-        <h3 className="petknowledge__subtitle">You already know?</h3>
+        <h3 className="petknowledge__subtitle">You already know ?</h3>
         <h1 className="petknowledge__title">Useful Pet Knowledge</h1>
         <section>
           {data.map((petknowledge) => {

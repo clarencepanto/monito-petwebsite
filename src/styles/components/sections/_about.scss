@@ -28,7 +28,7 @@
   }
 
   &__details {
-    font-size: $fsm-l;
+    font-size: $fsm-md;
     line-height: 1.3rem;
     padding-bottom: 2rem;
     position: relative;
@@ -44,6 +44,7 @@
 .about__btn {
   font-weight: $fw-regular;
   z-index: 2;
+  padding: 0.8rem 0;
 
   &--img {
     width: 20px;
@@ -62,8 +63,8 @@
   height: 450px;
   z-index: 1;
   position: absolute;
-  top: -60px;
+  top: -90px;
   right: -50px;
   transform: rotate(12deg);
-  background-color: $color-brand-1;
+  background-color: $color-brand-2;
 }

@@ -34,7 +34,7 @@ function PetList({ variant = "default", title, subtitle }) {
             );
           })}
         </section>
-        <button className="btn-petlist btn--transparentlarge">
+        <button className="btn-petlist btn--transparentlarge flex-center">
           View more <span className="chevron">&rsaquo;</span>
         </button>
         <div className={`flex-between pageindex`}>

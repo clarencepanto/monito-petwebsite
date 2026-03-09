@@ -10,7 +10,12 @@ function Homepage() {
     <div>
       <Navbar variant="hidden" />
       <Hero image={"/images/hero.png"} />
-      <PetList title="Take A Look At Some Of Our Pets" subtitle="Whats new?" />
+      <div className="container">
+        <PetList
+          title="Take A Look At Some Of Our Pets"
+          subtitle="Whats new?"
+        />
+      </div>
       <About />
       <PetKnowledge />
       <Footer />

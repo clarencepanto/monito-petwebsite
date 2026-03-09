@@ -59,6 +59,7 @@
 
     .squaredesign {
       border-radius: 0;
+
       &__bottom {
         display: none;
         &--darkblue {
@@ -85,6 +86,7 @@
 
 .hero__btn {
   font-weight: $fw-regular;
+  padding: 0.8rem 0;
 
   &--img {
     width: 20px;
