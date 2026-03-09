@@ -16,6 +16,14 @@
     margin: auto;
   }
 
+  &__link {
+    .flink {
+      @include sm {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
   &__logo {
     font-size: 1.5rem;
     width: 120px;
@@ -23,10 +31,20 @@
     z-index: 4;
     padding-bottom: 0.25rem;
 
+    @include sm {
+      width: 125px;
+      height: 35px;
+    }
+
     &--sub {
       width: 50px;
       height: 8px;
       z-index: 4;
+
+      @include sm {
+        width: 80px;
+        height: 10px;
+      }
     }
   }
 }
@@ -34,6 +52,11 @@
 .socialmedia-icon {
   width: 20px;
   height: 20px;
+
+  @include sm {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .divider {
@@ -49,6 +72,11 @@
   padding-bottom: 1rem;
   width: 250px;
   margin: auto;
+
+  @include sm {
+    font-size: 1.3rem;
+    width: 400px;
+  }
 }
 
 .copyright {
@@ -57,4 +85,8 @@
   font-size: $fsm-l;
   text-align: center;
   padding-bottom: 0.5rem;
+
+  @include sm {
+    font-size: 1.3rem;
+  }
 }

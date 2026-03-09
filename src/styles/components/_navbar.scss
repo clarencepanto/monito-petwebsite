@@ -49,10 +49,20 @@
     z-index: 4;
     padding-bottom: 0.25rem;
 
+    @include sm {
+      width: 125px;
+      height: 35px;
+    }
+
     &--sub {
       width: 42px;
       height: 6px;
       z-index: 4;
+
+      @include sm {
+        width: 80px;
+        height: 10px;
+      }
     }
   }
 
@@ -130,6 +140,14 @@
     top: -22.5rem;
     left: -4.5rem;
     transform: rotate(20deg);
+
+    @include sm {
+      left: 4rem;
+      top: -21rem;
+      width: 900px;
+      height: 900px;
+      transform: rotate(18deg);
+    }
   }
 }
 

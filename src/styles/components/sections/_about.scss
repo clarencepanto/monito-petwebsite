@@ -17,6 +17,10 @@
     padding-top: 2rem;
     position: relative;
     z-index: 2;
+
+    @include sm {
+      font-size: 4.4rem;
+    }
   }
 
   &__subtitle {
@@ -25,6 +29,10 @@
     font-size: 28px;
     padding-bottom: 1rem;
     z-index: 2;
+
+    @include sm {
+      font-size: 3rem;
+    }
   }
 
   &__details {
@@ -33,6 +41,12 @@
     padding-bottom: 2rem;
     position: relative;
     z-index: 2;
+
+    @include sm {
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+      padding-bottom: 1.5rem;
+    }
   }
 
   &__img {
@@ -45,6 +59,10 @@
   font-weight: $fw-regular;
   z-index: 2;
   padding: 0.8rem 0;
+
+  @include sm {
+    font-size: 1.3rem;
+  }
 
   &--img {
     width: 20px;
@@ -67,4 +85,11 @@
   right: -50px;
   transform: rotate(12deg);
   background-color: $color-brand-2;
+
+  @include sm {
+    width: 750px;
+    height: 650px;
+    top: -130px;
+    right: -100px;
+  }
 }

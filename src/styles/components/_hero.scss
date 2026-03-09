@@ -13,18 +13,32 @@
   &__title {
     color: $color-interactive-1;
     font-size: 46px;
+
+    @include sm {
+      font-size: 4.4rem;
+    }
   }
 
   &__subtitle {
     color: $color-interactive-1;
     font-size: 28px;
     padding-bottom: 1rem;
+
+    @include sm {
+      font-size: 3rem;
+    }
   }
 
   &__details {
     font-size: $fsm-md;
     line-height: 1.3rem;
     padding-bottom: 1rem;
+
+    @include sm {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      padding-bottom: 1.5rem;
+    }
   }
 
   &__img {
@@ -102,6 +116,10 @@
   &--marginfix {
     margin-right: 1.1rem;
   }
+
+  @include sm {
+    font-size: 1.5rem;
+  }
 }
 
 .squaredesign {
@@ -120,12 +138,26 @@
     background-color: $color-brand-1;
     z-index: 2;
 
+    @include sm {
+      width: 800px;
+      height: 800px;
+      bottom: -20rem;
+    }
+
     &--darkblue {
       background-color: $color-interactive-1;
       bottom: -13rem;
       left: 4rem;
       transform: rotate(1deg);
       z-index: 1;
+
+      @include sm {
+        width: 700px;
+        height: 700px;
+        bottom: -16rem;
+        left: 1rem;
+        transform: rotate(4deg);
+      }
     }
   }
 
@@ -139,6 +171,26 @@
       background-color: $color-brand-1;
       top: 59px;
       right: 100px;
+
+      @include sm {
+        top: 115px;
+        right: 120px;
+      }
+    }
+
+    &--darkblue {
+      background-color: $color-interactive-1;
+      top: 65px;
+      right: 103px;
+      z-index: 1;
+      width: 16px;
+      height: 16px;
+      transform: rotate(-15deg);
+
+      @include sm {
+        top: 120px;
+        right: 125px;
+      }
     }
 
     &--neard {
@@ -148,15 +200,11 @@
       width: 16px;
       height: 16px;
       transform: rotate(15deg);
-    }
-    &--darkblue {
-      background-color: $color-interactive-1;
-      top: 65px;
-      right: 103px;
-      z-index: 1;
-      width: 16px;
-      height: 16px;
-      transform: rotate(-15deg);
+
+      @include sm {
+        top: 70px;
+        right: 95px;
+      }
     }
   }
 }

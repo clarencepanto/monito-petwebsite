@@ -9,6 +9,10 @@
   border: none;
   border: 1px solid $neutral-color-40;
 
+  @include sm {
+    width: 510px;
+  }
+
   @include md {
     width: 800px;
   }

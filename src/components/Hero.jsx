@@ -14,8 +14,8 @@ function Hero({ variant = "default", image }) {
           </p>
         </article>
         <div className="flex-row btn-cont--category">
-          <button className="btn btn--transparent  flex-start hero__btn hero__btn--marginfix m3-left">
-            <div className="p2-left">View Intro</div>
+          <button className="btn btn--transparent  flex-center hero__btn hero__btn--marginfix m3-left">
+            <div>View Intro</div>
 
             <img
               src="/images/logo/Play.png"

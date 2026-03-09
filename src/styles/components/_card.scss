@@ -47,6 +47,10 @@
     font-weight: $fw-semibold;
     font-size: $fsm-2xl;
     margin: 0.5rem 0;
+
+    @include sm {
+      font-size: 1.2rem;
+    }
   }
 
   &__details {
@@ -73,6 +77,10 @@
       font-size: $fsm-md;
       font-weight: $fw-regular;
       margin: 0.25rem 0;
+
+      @include sm {
+        font-size: 1.05rem;
+      }
     }
 
     &-separator {
@@ -88,6 +96,10 @@
       font-size: $fsm-md;
       margin: 0.25rem 0;
       font-weight: $fw-semibold;
+
+      @include sm {
+        font-size: 1.05rem;
+      }
     }
   }
 
@@ -96,6 +108,10 @@
     font-size: $fsm-2xl;
     transform: translateY(10px);
     padding-bottom: 1rem;
+
+    @include sm {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -123,6 +139,12 @@
     align-items: center;
     justify-content: center;
     margin: 0.3rem;
+
+    @include sm {
+      font-size: 1rem;
+      width: 160px;
+      height: 30px;
+    }
   }
 
   &__title {
@@ -130,6 +152,10 @@
     font-size: $fsm-2xl;
     margin: 0.5rem;
     line-height: 1.5rem;
+
+    @include sm {
+      font-size: 1.2rem;
+    }
   }
 
   &__details {
@@ -138,5 +164,10 @@
     margin: 0.5rem;
     line-height: 1.3rem;
     letter-spacing: 0.2px;
+
+    @include sm {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
   }
 }

@@ -31,6 +31,11 @@
     font-family: $font-primary;
     font-weight: $fw-regular;
     padding: 0.5rem 0;
+
+    @include sm {
+      font-size: 1.3rem;
+      padding: 0.8rem 0;
+    }
   }
 
   &--primarylarge {
@@ -41,5 +46,9 @@
     color: $neutral-color-00;
     border-radius: 10px;
     font-size: $fsm-2xl;
+
+    @include sm {
+      width: 510px;
+    }
   }
 }

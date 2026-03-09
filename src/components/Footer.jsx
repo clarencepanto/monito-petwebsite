@@ -10,16 +10,24 @@ function Footer() {
         <section className="footer__link">
           <ul className="flex-between">
             <li>
-              <a href="">Home</a>
+              <a className="flink" href="">
+                Home
+              </a>
             </li>
             <li>
-              <a href="">Category</a>
+              <a className="flink" href="">
+                Category
+              </a>
             </li>
             <li>
-              <a href="">About</a>
+              <a className="flink" href="">
+                About
+              </a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a className="flink" href="">
+                Contact
+              </a>
             </li>
           </ul>
         </section>
@@ -75,7 +83,7 @@ function Footer() {
           </div>
 
           <div className="termsconds">
-            <ul className="flex-between">
+            <ul className="flex-between ">
               <li>
                 <a href="">Terms of Service</a>
               </li>

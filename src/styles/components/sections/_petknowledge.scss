@@ -7,6 +7,9 @@
     font-weight: $fw-regular;
     padding-top: 2.5rem;
     font-size: $fsm-md;
+    @include sm {
+      font-size: 1.8rem;
+    }
   }
 
   &__title {
@@ -15,6 +18,10 @@
     color: $color-interactive-1;
     font-weight: $fw-semibold;
     font-size: $fsm-3xl;
+  }
+
+  @include sm {
+    font-size: 2rem;
   }
 }
 
