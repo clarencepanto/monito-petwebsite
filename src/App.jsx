@@ -4,7 +4,7 @@ import Categorypage from "./page/Categorypage";
 import PetDetailpage from "./page/PetDetailpage";
 
 function App() {
-  return <Homepage />;
+  return <Categorypage />;
 }
 
 export default App;

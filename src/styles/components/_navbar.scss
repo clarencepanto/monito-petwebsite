@@ -148,6 +148,10 @@
       height: 900px;
       transform: rotate(18deg);
     }
+
+    @include md {
+      left: 7rem;
+    }
   }
 }
 

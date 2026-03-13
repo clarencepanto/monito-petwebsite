@@ -64,6 +64,10 @@
     font-size: 1.3rem;
   }
 
+  @include md {
+    padding: 1.2rem;
+  }
+
   &--img {
     width: 20px;
     height: 20px;
@@ -91,5 +95,11 @@
     height: 650px;
     top: -130px;
     right: -100px;
+  }
+
+  @include md {
+    width: 1000px;
+    top: -160px;
+    right: -80px;
   }
 }

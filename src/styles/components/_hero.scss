@@ -35,7 +35,7 @@
     padding-bottom: 1rem;
 
     @include sm {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       line-height: 1.5;
       padding-bottom: 1.5rem;
     }
@@ -64,6 +64,12 @@
       padding-top: 0;
     }
 
+    .image {
+      @include md {
+        width: 44rem;
+      }
+    }
+
     .btn-cont--category {
       display: flex;
       align-items: center;
@@ -86,6 +92,14 @@
           top: 350px;
           left: -50px;
           transform: rotate(5deg);
+
+          @include sm {
+            top: 500px;
+          }
+
+          @include md {
+            width: 800px;
+          }
         }
       }
       &__tinysquares {
@@ -95,8 +109,16 @@
           display: block;
           top: 100px;
           right: 70px;
-          width: 14px;
-          height: 14px;
+          width: 18px;
+          height: 18px;
+
+          @include sm {
+            top: 145px;
+          }
+
+          @include md {
+            left: 32.5rem;
+          }
         }
       }
     }
@@ -144,6 +166,11 @@
       bottom: -20rem;
     }
 
+    @include md {
+      bottom: -25rem;
+      left: 15rem;
+    }
+
     &--darkblue {
       background-color: $color-interactive-1;
       bottom: -13rem;
@@ -157,6 +184,11 @@
         bottom: -16rem;
         left: 1rem;
         transform: rotate(4deg);
+      }
+
+      @include md {
+        bottom: -20rem;
+        left: 10rem;
       }
     }
   }
@@ -176,6 +208,10 @@
         top: 115px;
         right: 120px;
       }
+
+      @include md {
+        right: 230px;
+      }
     }
 
     &--darkblue {
@@ -191,6 +227,10 @@
         top: 120px;
         right: 125px;
       }
+
+      @include md {
+        right: 235px;
+      }
     }
 
     &--neard {
@@ -205,10 +245,19 @@
         top: 70px;
         right: 95px;
       }
+
+      @include md {
+        right: 223px;
+        top: 65px;
+      }
     }
   }
 }
 
 .image {
   z-index: 3;
+
+  @include md {
+    margin: auto;
+  }
 }

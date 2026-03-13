@@ -42,6 +42,11 @@
       font-size: $fsm-md;
       transform: translate(6.5rem, 1.6rem);
       padding-top: 0;
+
+      @include sm {
+        font-size: 1rem;
+        transform: translate(10.5rem, 2.3rem);
+      }
     }
 
     .btn-petlist {

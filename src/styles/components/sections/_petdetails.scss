@@ -9,6 +9,7 @@
 }
 
 .petdetails {
+  width: 100%;
   &-darklineimg {
     width: 2rem;
     height: 0.3rem;
@@ -24,11 +25,19 @@
   &__petname {
     font-size: $fsm-3xl;
     padding-bottom: 0.5rem;
+
+    @include xs {
+      font-size: 2rem;
+    }
   }
   &__petprice {
     font-size: $fsm-l;
     font-weight: $fw-bold;
     padding-bottom: 0.8rem;
+
+    @include xs {
+      font-size: 1.2rem;
+    }
   }
 
   &__infotitle {
