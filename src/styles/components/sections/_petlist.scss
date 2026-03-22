@@ -35,6 +35,10 @@
 
   .btn-petlist {
     font-weight: $fw-regular;
+
+    @include lg {
+      display: none;
+    }
   }
 
   &--category {

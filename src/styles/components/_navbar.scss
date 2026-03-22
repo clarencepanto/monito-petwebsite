@@ -26,20 +26,27 @@
     padding: 0.5rem;
     z-index: 102;
 
+    // hamburger
+    @include lg {
+      display: none;
+    }
+
     &--search {
       display: none;
       @include lg {
         display: block; // Show search icon on desktop
         position: absolute;
-        transform: translateX(-6rem);
+        transform: translateX(-0.1rem);
+        top: 0.2rem;
+        left: 0.2rem;
       }
     }
   }
 
   &__toggle-icon {
-    width: 28px;
-    height: 28px;
-    color: $neutral-color-01;
+    @include lg {
+      color: $neutral-color-01;
+    }
   }
 
   &__logo {
@@ -54,6 +61,12 @@
       height: 35px;
     }
 
+    @include lg {
+      width: 85px;
+      height: 25px;
+      transform: translateX(30px);
+    }
+
     &--sub {
       width: 42px;
       height: 6px;
@@ -63,24 +76,32 @@
         width: 80px;
         height: 10px;
       }
+
+      @include lg {
+        width: 40px;
+        height: 6px;
+        transform: translateX(30px);
+      }
     }
   }
 
   &__menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--color-primary);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    z-index: 1;
+    position: relative;
+    display: none;
+
+    @include lg {
+      display: flex;
+      gap: 2rem;
+      z-index: 2;
+      top: -1.6rem;
+      left: 9.3rem;
+
+      width: 850px;
+
+      .navbar__link {
+        font-size: 0.8rem;
+      }
+    }
 
     &--active {
       transform: translateX(0);
@@ -96,6 +117,12 @@
 
   &__flag {
     display: none;
+
+    @include lg {
+      display: block;
+      width: 13px;
+      height: 13px;
+    }
   }
 
   &--transparent {
@@ -110,17 +137,31 @@
 
 .input--desktop {
   display: none;
+
+  @include lg {
+    display: block;
+    width: 12rem;
+    border-radius: 15px;
+    padding-left: 2rem;
+    outline: none;
+    border: none;
+    font-size: 0.6rem;
+  }
 }
 
 .dropdown {
   display: none;
 
-  button {
-    display: none;
+  @include lg {
+    display: block;
+    padding: 0.5rem;
+  }
 
-    span {
-      padding-right: 0.5rem;
-    }
+  button {
+    display: block;
+    background-color: $color-brand-2;
+    outline: none;
+    border: none;
   }
 }
 
@@ -152,11 +193,30 @@
     @include md {
       left: 7rem;
     }
+
+    @include lg {
+      left: -12rem;
+      top: -22rem;
+    }
   }
 }
 
 .navbar--hidden {
   .navigationref {
     display: none;
+  }
+}
+
+.adjustment-align {
+  @include lg {
+    transform: translateY(-0.5rem);
+  }
+}
+
+.navbar__dropdowncontainer {
+  @include lg {
+    position: relative;
+    right: 0.5rem;
+    top: -0.3rem;
   }
 }

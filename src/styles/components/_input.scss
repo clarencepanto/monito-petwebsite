@@ -17,6 +17,11 @@
     width: 610px;
   }
 
+  @include lg {
+    height: 50px;
+    width: 500px;
+  }
+
   &__group {
     opacity: 0;
     transform: translateY(-20px);

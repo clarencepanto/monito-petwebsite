@@ -39,11 +39,23 @@
       line-height: 1.5;
       padding-bottom: 1.5rem;
     }
+
+    @include lg {
+      font-size: 1.1rem;
+    }
   }
 
   &__img {
     padding-top: 3rem;
     width: 100%;
+
+    @include lg {
+      display: block;
+      width: 500px;
+      transform: translate(23rem, 1rem);
+      position: relative;
+      z-index: 3;
+    }
   }
 
   &--categoryvariant {
@@ -142,6 +154,10 @@
   @include sm {
     font-size: 1.5rem;
   }
+
+  @include lg {
+    font-size: 1.2rem;
+  }
 }
 
 .squaredesign {
@@ -171,6 +187,11 @@
       left: 15rem;
     }
 
+    @include lg {
+      bottom: -16rem;
+      left: 30rem;
+    }
+
     &--darkblue {
       background-color: $color-interactive-1;
       bottom: -13rem;
@@ -189,6 +210,11 @@
       @include md {
         bottom: -20rem;
         left: 10rem;
+      }
+
+      @include lg {
+        bottom: -11rem;
+        left: 30rem;
       }
     }
   }
@@ -212,6 +238,11 @@
       @include md {
         right: 230px;
       }
+
+      @include lg {
+        top: 60px;
+        right: 240px;
+      }
     }
 
     &--darkblue {
@@ -230,6 +261,11 @@
 
       @include md {
         right: 235px;
+      }
+
+      @include lg {
+        top: 65px;
+        right: 245px;
       }
     }
 
@@ -250,14 +286,45 @@
         right: 223px;
         top: 65px;
       }
+
+      @include lg {
+        top: 0;
+        position: absolute;
+      }
     }
   }
 }
 
 .image {
-  z-index: 3;
+  position: relative;
 
   @include md {
     margin: auto;
+  }
+
+  @include lg {
+    width: 700px;
+  }
+}
+
+.hero-desktop-adjust {
+  @include lg {
+    width: 550px;
+    transform: translateX(1.5rem);
+  }
+}
+
+.hero-bottom-desktop-square {
+  display: none;
+  @include lg {
+    position: absolute;
+    display: block;
+    border-radius: 62px;
+    width: 400px;
+    height: 400px;
+    background-color: $color-brand-1;
+    bottom: -22rem;
+    left: -2rem;
+    transform: rotate(-35deg);
   }
 }

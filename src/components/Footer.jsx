@@ -7,70 +7,73 @@ function Footer() {
     <div className="container footerbgcolor">
       <RegisterForm />
       <footer className="footer">
-        <section className="footer__link">
-          <ul className="flex-between">
-            <li>
-              <a className="flink" href="">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="flink" href="">
-                Category
-              </a>
-            </li>
-            <li>
-              <a className="flink" href="">
-                About
-              </a>
-            </li>
-            <li>
-              <a className="flink" href="">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section className="footer__socials">
-          <ul className="flex-between">
-            <li>
-              <a href="">
-                <img
-                  src="/images/logo/Facebook.png"
-                  alt="facebook"
-                  className="socialmedia-icon"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img
-                  src="/images/logo/Twitter.png"
-                  alt="twitter"
-                  className="socialmedia-icon"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img
-                  src="/images/logo/Instagram.png"
-                  alt="instagram"
-                  className="socialmedia-icon"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img
-                  src="/images/logo/YouTube.png"
-                  alt="youtube"
-                  className="socialmedia-icon"
-                />
-              </a>
-            </li>
-          </ul>
-        </section>
+        <div className="desktop-link-adjustment">
+          <section className="footer__link">
+            <ul className="footer-desktop-style-link">
+              <li>
+                <a className="flink" href="">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a className="flink" href="">
+                  Category
+                </a>
+              </li>
+              <li>
+                <a className="flink" href="">
+                  About
+                </a>
+              </li>
+              <li>
+                <a className="flink" href="">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section className="footer__socials">
+            <ul className=" footer-desktop-style-social">
+              <li>
+                <a href="">
+                  <img
+                    src="/images/logo/Facebook.png"
+                    alt="facebook"
+                    className="socialmedia-icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="/images/logo/Twitter.png"
+                    alt="twitter"
+                    className="socialmedia-icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="/images/logo/Instagram.png"
+                    alt="instagram"
+                    className="socialmedia-icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="/images/logo/YouTube.png"
+                    alt="youtube"
+                    className="socialmedia-icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+
         <div className="divider"></div>
         <section>
           <div className="flex-center flex-column">
@@ -82,17 +85,19 @@ function Footer() {
             />
           </div>
 
-          <div className="termsconds">
-            <ul className="flex-between ">
-              <li>
-                <a href="">Terms of Service</a>
-              </li>
-              <li>
-                <a href="">Privacy Policy</a>
-              </li>
-            </ul>
+          <div className="termsconds-cont-desktop">
+            <div className="termsconds">
+              <ul className="flex-between ">
+                <li>
+                  <a href="">Terms of Service</a>
+                </li>
+                <li>
+                  <a href="">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+            <h3 className="copyright">© 2022 Monito. All rights reserved.</h3>
           </div>
-          <h3 className="copyright">© 2022 Monito. All rights reserved.</h3>
         </section>
       </footer>
     </div>

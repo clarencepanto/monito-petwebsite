@@ -9,10 +9,10 @@ function PetKnowledge() {
       <div>
         <h3 className="petknowledge__subtitle">You already know ?</h3>
         <h1 className="petknowledge__title">Useful Pet Knowledge</h1>
-        <section>
+        <section className="grid-knowledge">
           {data.map((petknowledge) => {
             return (
-              <article className="card card--article">
+              <article className="card--article">
                 <img
                   src={petknowledge.img}
                   alt={petknowledge.title}

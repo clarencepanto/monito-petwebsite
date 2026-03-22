@@ -14,9 +14,44 @@
     padding-bottom: 1rem;
     width: 210px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @include lg {
+      padding-top: 0rem;
+    }
+
+    .footer-desktop-style-social {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.3rem;
+      @include lg {
+        display: flex;
+        transform: translate(6.9rem, -0.3rem);
+        gap: 30px;
+      }
+    }
   }
 
   &__link {
+    .footer-desktop-style-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0.5rem;
+
+      @include lg {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+      }
+    }
     .flink {
       @include sm {
         font-size: 1.3rem;
@@ -36,6 +71,10 @@
       height: 35px;
     }
 
+    @include lg {
+      transform: translateY(1.8rem);
+    }
+
     &--sub {
       width: 50px;
       height: 8px;
@@ -44,6 +83,10 @@
       @include sm {
         width: 80px;
         height: 10px;
+      }
+
+      @include lg {
+        transform: translateY(1.8rem);
       }
     }
   }
@@ -77,6 +120,11 @@
     font-size: 1.3rem;
     width: 400px;
   }
+
+  @include lg {
+    width: 300px;
+    transform: translate(180px, -2rem);
+  }
 }
 
 .copyright {
@@ -88,5 +136,31 @@
 
   @include sm {
     font-size: 1.3rem;
+  }
+}
+
+.desktop-link-adjustment {
+  @include lg {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.termsconds-cont-desktop {
+  @include lg {
+    display: flex;
+  }
+
+  .termsconds {
+    @include lg {
+      order: 2;
+    }
+  }
+
+  .copyright {
+    @include lg {
+      order: 1;
+    }
   }
 }

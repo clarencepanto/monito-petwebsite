@@ -21,6 +21,9 @@
     @include sm {
       font-size: 4.4rem;
     }
+
+    @include lg {
+    }
   }
 
   &__subtitle {
@@ -52,6 +55,20 @@
   &__img {
     padding-top: 3rem;
     width: 100%;
+
+    .aboutimgdog {
+      position: relative;
+
+      @include md {
+        margin: auto;
+      }
+
+      @include lg {
+        margin: 0;
+        transform: translateX(-3rem);
+        z-index: 2;
+      }
+    }
   }
 }
 
@@ -101,5 +118,23 @@
     width: 1000px;
     top: -160px;
     right: -80px;
+  }
+
+  @include lg {
+    right: -20rem;
+    top: 1rem;
+    transform: rotate(60deg);
+    width: 1000px;
+    height: 1000px;
+  }
+}
+
+.desktop-positioning-info {
+  @include lg {
+    position: relative;
+
+    width: 550px;
+    transform: translate(22rem, 10rem);
+    z-index: 3;
   }
 }

@@ -54,5 +54,9 @@
     @include md {
       width: 610px;
     }
+
+    @include lg {
+      width: 150px;
+    }
   }
 }

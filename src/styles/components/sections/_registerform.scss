@@ -7,10 +7,21 @@
   border-radius: 20px;
   height: 250px;
 
+  @include lg {
+    display: flex;
+    align-items: center;
+    height: 130px;
+  }
+
   &__title {
     color: $neutral-color-00;
     font-size: $fsm-3xl;
     padding: 1rem;
+
+    @include lg {
+      width: 500px;
+      letter-spacing: 1.3px;
+    }
   }
 }
 
@@ -18,9 +29,25 @@
   background-color: $neutral-color-00;
   padding: 1rem;
   border-radius: 20px;
+
+  @include lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0.8rem;
+    gap: 10px;
+    width: 38rem;
+  }
 }
 
 .registerform-positioning {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.btn-registerform {
+  @include lg {
+    transform: translateY(-0.4rem);
+    font-size: 13px;
+  }
 }

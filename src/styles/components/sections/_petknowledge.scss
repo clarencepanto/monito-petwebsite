@@ -32,4 +32,10 @@
 
 .btn__petknowledge {
   margin-bottom: 2rem;
+
+  @include lg {
+    width: 13rem;
+    margin-bottom: 0;
+    transform: translate(46rem, -67rem);
+  }
 }

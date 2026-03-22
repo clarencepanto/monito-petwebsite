@@ -14,7 +14,9 @@ function RegisterForm() {
               className="input"
               placeholder="Enter your Email"
             />
-            <button className=" btn--primarylarge">Subscribe Now</button>
+            <button className="btn--primarylarge btn-registerform">
+              Subscribe Now
+            </button>
           </div>
         </div>
       </section>
