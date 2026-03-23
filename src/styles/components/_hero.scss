@@ -76,6 +76,12 @@
 
     .hero__img {
       padding-top: 0;
+
+      @include lg {
+        margin: 0;
+        transform: translateX(-3rem);
+        z-index: 2;
+      }
     }
 
     .image {
