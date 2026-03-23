@@ -31,7 +31,12 @@
 }
 
 .btn__petknowledge {
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  @include md {
+    margin-top: 1.5rem;
+  }
 
   @include lg {
     width: 13rem;

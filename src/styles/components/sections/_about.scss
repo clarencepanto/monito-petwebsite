@@ -58,6 +58,7 @@
 
     .aboutimgdog {
       position: relative;
+      z-index: 2;
 
       @include md {
         margin: auto;
