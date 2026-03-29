@@ -15,16 +15,18 @@ function Hero({ variant = "default", image }) {
             </p>
           </article>
           <div className="flex-row btn-cont--category">
-            <button className="btn btn--transparent  flex-center hero__btn hero__btn--marginfix m3-left">
+            <button className="btn btn--transparent  flex-center hero__btn hero__btn--marginfix m3-left btncategory--1">
               <div>View Intro</div>
 
               <img
                 src="/images/logo/Play.png"
                 alt="play"
-                className="hero__btn--img "
+                className="hero__btn--img btncategory--1--img "
               />
             </button>
-            <button className="btn hero__btn btncategory">Explore Now</button>
+            <button className="btn hero__btn btncategory--2">
+              Explore Now
+            </button>
           </div>
         </div>
 

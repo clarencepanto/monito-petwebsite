@@ -64,10 +64,21 @@
     border-radius: 20px;
     padding: 2rem 0 0 0;
 
+    @include lg {
+      position: relative;
+    }
+
     .hero__title,
     .hero__subtitle,
     .hero__details {
       padding: 0 1rem;
+
+      @include lg {
+        position: relative;
+        transform: translate(22rem, 6rem);
+        color: $neutral-color-00;
+        z-index: 5;
+      }
     }
 
     .hero__details {
@@ -79,7 +90,7 @@
 
       @include lg {
         margin: 0;
-        transform: translateX(-3rem);
+        transform: translate(-1rem, 1rem);
         z-index: 2;
       }
     }
@@ -97,8 +108,30 @@
       transform: translateY(40px);
       padding: 0 0.5rem;
 
-      .btncategory {
+      @include lg {
+        transform: translate(20rem, 8rem);
+      }
+
+      .btncategory--1 {
+        @include lg {
+          color: $neutral-color-00;
+          border: 1px solid $neutral-color-00;
+        }
+
+        &--img {
+          @include lg {
+            background-color: $neutral-color-00;
+          }
+        }
+      }
+
+      .btncategory--2 {
         padding: 1rem 0;
+
+        @include lg {
+          background-color: $neutral-color-00;
+          color: $color-interactive-1;
+        }
       }
     }
 
@@ -107,6 +140,7 @@
 
       &__bottom {
         display: none;
+
         &--darkblue {
           display: block;
           top: 350px;
@@ -119,6 +153,17 @@
 
           @include md {
             width: 800px;
+          }
+
+          @include lg {
+            width: 1000px;
+            height: 1200px;
+            transform: rotate(-20deg);
+            top: -1rem;
+            left: 20rem;
+            border-radius: 100px;
+            position: absolute;
+            z-index: 1;
           }
         }
       }
@@ -319,6 +364,8 @@
   @include lg {
     width: 550px;
     transform: translateX(1.5rem);
+    position: relative;
+    z-index: 2;
   }
 }
 

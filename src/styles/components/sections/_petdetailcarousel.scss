@@ -10,9 +10,18 @@
     width: 100%;
   }
 
+  @include lg {
+    width: 50%;
+    transform: translateX(2.3rem);
+  }
+
   &__mainimg {
     width: 100%;
     object-fit: cover;
+
+    @include lg {
+      border-radius: 10px;
+    }
   }
 
   &__sideimg {
@@ -21,11 +30,19 @@
     display: flex;
     gap: 0.5rem;
 
+    @include lg {
+      margin-left: 0;
+    }
+
     &__image {
       width: 4.5rem;
 
       height: 70px;
       object-fit: cover;
+
+      @include lg {
+        width: 5.6rem;
+      }
 
       &--special {
         border: 2px solid $color-brand-4;
@@ -43,6 +60,10 @@
     position: absolute;
     left: 1rem;
     top: 1rem;
+
+    @include lg {
+      display: none;
+    }
   }
 
   &__infoicon {
@@ -51,6 +72,10 @@
     position: absolute;
     right: 1rem;
     top: 1.5rem;
+
+    @include lg {
+      display: none;
+    }
   }
 
   &__arrow {

@@ -1,12 +1,10 @@
 import "../../styles/components/sections/_petdetails.scss";
 import NavigationRef from "../sections/NavigationRef";
-import PetList from "../sections/PetList";
-import Footer from "../Footer";
 
 function PetDetails() {
   return (
-    <div>
-      <div className="container petdetails-cont">
+    <div className="petcontmain">
+      <div className="container  petdetails-cont">
         <section className="petdetails">
           <div className="flex-center">
             <img
@@ -112,7 +110,7 @@ function PetDetails() {
                   100% health guarantee for pets
                 </h3>
               </div>
-              <div className="flex-row flex-align-elements gap10 p1-top">
+              <div className="flex-row flex-align-elements gap10">
                 <img
                   src="/images/petdetailimg/image-10.png"
                   alt=""
@@ -123,35 +121,33 @@ function PetDetails() {
                 </h3>
               </div>
             </section>
-            <section>
-              <h2 className="p1-bottom">Our lovely customer</h2>
-              <div className="grid gap10 p1-bottom">
-                <img
-                  src="/images/petdetailimg/image-7.png"
-                  alt=""
-                  className="petdetailcustomerimg"
-                />
-                <img
-                  src="/images/petdetailimg/image-8.png"
-                  alt=""
-                  className="petdetailcustomerimg--halfimg"
-                />
-              </div>
-              <div className="flex-row flex-center gap5">
-                <div className="rectangle-petdetailnav"></div>
-                <div className="circle-petdetailnav"></div>
-
-                <div className="circle-petdetailnav"></div>
-                <div className="circle-petdetailnav"></div>
-                <div className="circle-petdetailnav"></div>
-                <div className="circle-petdetailnav"></div>
-              </div>
-            </section>
           </div>
-          <PetList title="See more puppies" variant="nobtn" />
         </section>
       </div>
-      <Footer />
+      <section className="petdetail__testimonial__cont">
+        <h2 className="p1-bottom">Our lovely customer</h2>
+        <div className="grid gap10 p1-bottom petdetail__testimonialdetail">
+          <img
+            src="/images/petdetailimg/image-7.png"
+            alt=""
+            className="petdetailcustomerimg"
+          />
+          <img
+            src="/images/petdetailimg/image-8.png"
+            alt=""
+            className="petdetailcustomerimg--halfimg"
+          />
+        </div>
+        <div className="flex-row flex-center gap5 ">
+          <div className="rectangle-petdetailnav"></div>
+          <div className="circle-petdetailnav"></div>
+
+          <div className="circle-petdetailnav"></div>
+          <div className="circle-petdetailnav"></div>
+          <div className="circle-petdetailnav"></div>
+          <div className="circle-petdetailnav"></div>
+        </div>
+      </section>
     </div>
   );
 }

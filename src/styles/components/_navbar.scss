@@ -136,6 +136,14 @@
     .squaredesign {
       background-color: $neutral-color-10;
     }
+
+    .dropdown {
+      button {
+        @include lg {
+          background-color: $neutral-color-10;
+        }
+      }
+    }
   }
 }
 
