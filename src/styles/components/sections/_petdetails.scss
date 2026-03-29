@@ -4,7 +4,10 @@
 
 .petcontmain {
   @include lg {
-    height: 300px;
+    border: 1px solid $neutral-color-20;
+    padding: 1rem 0;
+    border-radius: 20px;
+    height: 1000px;
   }
 }
 
@@ -166,7 +169,9 @@
 
 .petdetail__testimonial__cont {
   @include lg {
-    transform: translate(2rem, -43rem);
+    margin: 1rem 0;
+
+    transform: translate(3rem, 1rem);
   }
 
   .petdetail__testimonialdetail {
@@ -175,12 +180,5 @@
 
       display: flex;
     }
-  }
-}
-
-.border {
-  @include lg {
-    border: 1px solid #ccd1d2;
-    border-radius: 20px;
   }
 }
